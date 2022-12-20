@@ -1,0 +1,103 @@
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 350px;
+}
+
+.nav .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+.nav-name a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    outline: var(--border-light);
+    border-radius: var(--border-radius);
+    transition-duration: var(--transition-duration);
+}
+
+.nav-name h1 {
+    font-size: 30px;
+}
+
+.nav-name h5 {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+.nav-item a {
+    transition-duration: var(--transition-duration);
+    border-radius: var(--border-radius);
+    outline: var(--border-light);
+    padding: 10px 20px;
+}
+
+.nav-item.active a,
+.nav-name.active a {
+    background-color: #000;
+    color: #fff;
+    outline: var(--border-light);
+    box-shadow: none;
+}
+.nav-item a:hover,
+.nav-name a:hover {
+    background-color: #000;
+    color: #fff;
+    outline: var(--border-light);
+    box-shadow: var(--box-shadow-sm);
+}
+
+.nav hr {
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    border: none;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .nav .nav-container {
+        padding: 20px;
+    }
+    .nav {
+        position: relative;
+        left: unset;
+        top: unset;
+        width: 100%;
+    }
+    .nav-items {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

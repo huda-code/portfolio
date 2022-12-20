@@ -1,0 +1,122 @@
+.project-card {
+    flex-grow: 1;
+    max-width: 50px;
+    min-width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    outline: var(--border);
+    transition-duration: var(--transition-duration);
+    text-decoration: none;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    user-select: none;
+}
+
+.project-card:hover {
+    box-shadow: var(--box-shadow-light-sm);
+    outline: var(--border-light);
+    background-color: #000;
+}
+
+.project-card:hover {
+    color: #fff;
+}
+
+.project-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    justify-content: center;
+}
+
+.tip {
+    font-size: 10px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.project-card-code {
+    font-size: 20px;
+}
+
+.project-card-id {
+    font-size: 8px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.project-location {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.project-size {
+    font-size: 10px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.project-description {
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    transition-duration: var(--transition-duration);
+}
+
+.project-description:active {
+    opacity: 0.5;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.gallery .img {
+    border-radius: var(--border-radius);
+    min-width: 200px;
+    width: 250px;
+    flex-grow: 1;
+    height: 250px;
+    cursor: pointer;
+    transition-duration: var(--transition-duration);
+    outline: var(--border);
+}
+
+.gallery .img:hover {
+    box-shadow: var(--box-shadow-light-sm);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 20px;
+    }
+    .project-location {
+        font-size: 12px;
+    }
+}

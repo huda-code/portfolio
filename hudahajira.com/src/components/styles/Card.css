@@ -1,0 +1,55 @@
+.card {
+    flex-grow: 1;
+    min-width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    outline: var(--border);
+    transition-duration: var(--transition-duration);
+    text-decoration: none;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    user-select: none;
+}
+
+.card:hover {
+    box-shadow: var(--box-shadow-light);
+    outline: var(--border-light);
+    background-color: #000;
+}
+
+.card:hover .card-content {
+    color: #fff;
+}
+
+.card-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    justify-content: center;
+    height: 100%;
+}
+
+.card-content .card-code {
+    font-size: 65px;
+}
+
+.card-content .card-id {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.footer h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer small {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    padding-top: 10px;
+}
+
+.footer small a {
+    text-decoration: none;
+    color: #ff9c9c;
+    margin-left: 6px;
+    font-weight: 600;
+    transition-duration: var(--transition-duration);
+}
+
+.footer small a:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 2px 2px 0 #ff9c9c;
+}
